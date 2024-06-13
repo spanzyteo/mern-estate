@@ -273,7 +273,9 @@ const Profile = () => {
                 >
                   Delete
                 </button>
+                <Link to={`/update-listing/${listing._id}`}>
                 <button className="text-green-700 uppercase ">Edit</button>
+                </Link>
               </div>
               <p className="text-red-700">
                 {deleteError ? 'Error deleting your listing' : ''}
